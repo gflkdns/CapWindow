@@ -68,7 +68,7 @@ public class CatActivity extends AppCompatActivity {
                 return true;
             }
         });
-        webview.loadUrl("http://www.baidu.com");
+        webview.loadUrl("https://miqt.github.io/jellyfish/");
     }
 
     @Override
