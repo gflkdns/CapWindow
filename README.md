@@ -33,7 +33,7 @@ Android截屏
 ----------
 
 
-**方法2：**使用Android系统提供的服务Context.MEDIA_PROJECTION_SERVICE，进行截图操作。
+**方法2：** 使用Android系统提供的服务Context.MEDIA_PROJECTION_SERVICE，进行截图操作。
 
 
 关键部分代码解析：↓
