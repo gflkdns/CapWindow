@@ -8,7 +8,7 @@ Android截屏
 ----------
 
 
-**方法1：**首先想到的思路是利用SDK提供的View.getDrawingCache()方法：
+**方法1：** 首先想到的思路是利用SDK提供的View.getDrawingCache()方法：
 
 ```
   public void printScreen(View view) {
@@ -27,7 +27,7 @@ Android截屏
         }
     }
 ```
-这个方法在很多情况下都是没有问题的，比如说截取imageview，TextView，甚至otherview.getRootView();都没问题，但在WebView上就会出现webview的部分截取完缺少页面里的一些内容的情况，比如说用webview打开这个（https://miqt.github.io/jellyfish/）界面，截取的图片就会有问题，具体表现为网页中游动的水母没有显示在截取的图片上。
+这个方法在很多情况下都是没有问题的，比如说截取imageview，TextView，甚至otherview.getRootView();都没问题，但在WebView上就会出现webview的部分截取完缺少页面里的一些内容的情况，比如说用webview打开[这个](https://miqt.github.io/jellyfish/)界面，截取的图片就会有问题，具体表现为网页中游动的水母没有显示在截取的图片上。
 
 
 ----------
@@ -35,7 +35,6 @@ Android截屏
 
 **方法2：**使用Android系统提供的服务Context.MEDIA_PROJECTION_SERVICE，进行截图操作。
 
-Demo源码:https://github.com/miqt/CapWindow(欢迎star！)
 
 关键部分代码解析：↓
 
